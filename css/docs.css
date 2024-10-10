@@ -1,0 +1,189 @@
+a {
+	color: blue;
+} 
+
+a:hover {
+	text-decoration: underline;
+}
+
+.footerCon {
+	color: #B1B0B0; 
+	width: auto;
+	height: 30px;
+	font-size: 16px;
+	clear: both;
+	margin-left: 165px;
+	margin-top: 10px;
+}
+
+.auCon {
+	max-width: 400px;
+	min-width: 250px;
+	width: 100%;
+	height: 400px;
+	position: relative;
+	top: 12%;
+	background-color: white;
+	z-index: 100;
+	border: 8px groove;
+	box-shadow: 10px 10px 5px black;
+	border-color: #000066 black black #000066;
+}
+
+.au {
+	color: red;
+}
+
+.copyDiv {
+	float: right; 
+	margin-right: 5px;
+	color: #B1B0B0;
+	padding-top: 18px;
+}
+
+.infoDiv {
+	float: left;
+	margin-left: 5px;
+}
+
+.or {
+	float: left;
+	color: #00C3FF;
+	margin-left: 8px;
+	margin-right: 8px;
+	line-height: 20%;
+	font-size: 22px;
+}
+
+.or2 {
+	color: #00C3FF;
+	margin-left: 8px;
+	margin-right: 8px;
+	line-height: 20%;
+	font-size: 22px;
+	float: left;
+}
+
+.closeDoc {
+	float: right;
+	width: 45px;
+	height: 45px;
+	background-color: black;
+	color: #B1B0B0; 
+	text-align: center;
+	margin-top: 0px;
+	cursor: pointer;
+}
+
+.closeDoc:hover {
+	transition: 1s;
+	color: #00C3FF;
+}
+
+.aboutUs {
+	cursor: pointer;
+	float: left;
+}
+
+.aboutUs:hover {
+	transition: 1s;
+	text-shadow: 0 0 4px #002BAB, 0 0 6px black, 0 0 10px #00C3FF, 0 0 20px #00C3FF, -2px -2px 24px #CF19B9, -4px -4px 40px #CF19B9, -8px -8px 80px #CF19B9, 2px 2px 24px #1900FF, 4px 4px 40px #00C3FF, 0px 0px 80px #00C3FF, 0px 0px 150px #00C3FF;
+	font-weight: lighter;
+	color: #00C3FF;
+}
+
+.docHeader {
+	margin-left: auto;
+	margin-right: auto;
+	width: 150px;
+	font-size: 24px;
+	text-shadow: 0 0 4px #002BAB, 0 0 6px black, 0 0 10px #00C3FF, 0 0 20px #00C3FF, -2px -2px 24px #CF19B9, -4px -4px 40px #CF19B9, -8px -8px 80px #CF19B9, 2px 2px 24px #1900FF, 4px 4px 40px #00C3FF, 0px 0px 80px #00C3FF, 0px 0px 150px #00C3FF;
+	font-weight: lighter;
+	color: #00C3FF;
+}
+
+.docText {
+	text-indent: 15px;
+	margin-left: 5px;
+	margin-right: 5px;
+	font-size: 20px;
+	color: black;
+	text-shadow: 0px 0px 0px #00C3FF, 0 0 0px #00C3FF;
+}
+
+.finePrint {
+	font-size: 1px;
+	width: 15px;
+	margin-left: 5px;
+}
+
+.rsFinePrint {
+	margin-right: 5px;
+	text-indent: 15px;
+	margin-left: 5px;
+	font-size: 20px;
+	color: black;
+	text-shadow: 0px 0px 0px #00C3FF, 0 0 0px #00C3FF;
+}
+
+.contactUs {
+	cursor: pointer;
+	float: left;
+}
+
+.contactUs:hover {
+	transition: 1s;
+	text-shadow: 0 0 4px #002BAB, 0 0 6px black, 0 0 10px #00C3FF, 0 0 20px #00C3FF, -2px -2px 24px #CF19B9, -4px -4px 40px #CF19B9, -8px -8px 80px #CF19B9, 2px 2px 24px #1900FF, 4px 4px 40px #00C3FF, 0px 0px 80px #00C3FF, 0px 0px 150px #00C3FF;
+	font-weight: lighter;
+	color: #00C3FF;
+}
+
+.cuCon {
+	max-width: 400px;
+	min-width: 250px;
+	width: 100%;
+	height: 400px;
+	position: relative;
+	top: 12%;
+	background-color: white;
+	z-index: 100;
+	border: 8px groove;
+	box-shadow: 10px 10px 5px black;
+	border-color: #000066 black black #000066;
+}
+
+.email {
+
+}
+
+.privacy {
+	cursor: pointer;
+	float: left;
+}
+
+.privacy:hover {
+	transition: 1s;
+	text-shadow: 0 0 4px #002BAB, 0 0 6px black, 0 0 10px #00C3FF, 0 0 20px #00C3FF, -2px -2px 24px #CF19B9, -4px -4px 40px #CF19B9, -8px -8px 80px #CF19B9, 2px 2px 24px #1900FF, 4px 4px 40px #00C3FF, 0px 0px 80px #00C3FF, 0px 0px 150px #00C3FF;
+	font-weight: lighter;
+	color: #00C3FF;
+}
+
+.priCon {
+	max-width: 840px;
+	min-width: 250px;
+	width: 100%;
+	height: auto;
+	position: relative;
+	top: 12%;
+	background-color: white;
+	z-index: 100;
+	border: 8px groove;
+	box-shadow: 10px 10px 5px black;
+	border-color: #000066 black black #000066;
+}
+
+.pHeaderText {
+	font-size: 24px;
+	margin-left: 10px;
+	margin-right: 10px;
+}
