@@ -1,0 +1,45 @@
+ <?xml version = "1.0" encoding = "utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns = "http://www.w3.org/1999/xhtml">
+<head>
+	<title>piratejunkies.com/T.V.</title>
+	<meta charset= "UTF-8" />
+	<meta name= "description" content= "Free movies to stream by Pirate Junkies Inc." />
+	<meta name= "keywords" content= "Full, Free, Google, Drive, TV, Television, GoogleDocs, OneDrive, YouTube, Viemo,  Hollywood, Indi, Films, Video, Stream, Watch, English, Genre, Year, Category, MPAA Rating, Resolution, Subtitles, mp4, mkv, avi, x264, brrip, dvdrip, yify, 2015, 2016" />
+	<meta name= "author" content= "Pirate Junkies Inc." />
+	<meta name="robots" content= "Free movies to stream by Pirate Junkies Inc." />
+	<meta name="googlebot" content="Free movies to stream by Pirate Junkies Inc." />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body onload = "windowSize(), run(), genreCheck(), yearCheck()" onresize="windowSize()">
+	<script>
+		var pjCSS = document.createElement("link");
+		pjCSS.setAttribute("rel", "stylesheet");
+		pjCSS.setAttribute("type", "text/css");
+		pjCSS.setAttribute("href", "css/pj.css");
+		document.head.appendChild(pjCSS);
+
+		var docsCSS = document.createElement("link");
+		docsCSS.setAttribute("rel", "stylesheet");
+		docsCSS.setAttribute("type", "text/css");
+		docsCSS.setAttribute("href", "css/docs.css");
+		document.head.appendChild(docsCSS);
+
+		var tvJS = document.createElement("script");
+		tvJS.setAttribute("async", "true");
+		tvJS.setAttribute("src", "javascript/tv.js");
+		document.head.appendChild(tvJS);
+
+		var favicon = document.createElement("link");
+		favicon.setAttribute("rel", "icon");
+		favicon.setAttribute("type", "image/PNG");
+		favicon.setAttribute("href", "images/avatar.PNG");
+		document.head.appendChild(favicon);
+
+		document.body.appendChild(con);
+
+		genreCheck();
+	</script>
+</body>
+</html>
