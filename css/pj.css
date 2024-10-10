@@ -1,0 +1,511 @@
+body {
+	background-color: black;
+	color: white; 
+	font-family: "Comic Sans MS", cursive, sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+a {
+	text-decoration: none;
+	color: white;
+}
+
+.con {
+	max-height: 10000px;
+	height: 100%;
+	max-width: 10000px;
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto; 
+	position: relative;
+}
+
+.headerCon {
+	max-width: 10000px;
+	width: 100%;
+	position: fixed;
+	top: 0;
+	background-color: black;
+	z-index: 100;
+	border-bottom: 3px solid #00C3FF;
+	padding-bottom: 15px;
+}
+
+.headerCon:after {
+  content: "";
+  position: absolute;
+  bottom: -3px;
+  left: -1px;	
+  right: -1px;
+  height: 3px;
+  background-image: -webkit-gradient(linear, 0 0, 100% 0, from(#CF19B9), to(transparent));
+  background-image: -webkit-linear-gradient(left, #00C3FF, #CF19B9, transparent);
+  background-image: -moz-linear-gradient(left, #00C3FF, #CF19B9, transparent);
+  background-image: -o-linear-gradient(left, #00C3FF, #CF19B9, transparent);
+}
+
+.leftHeaderCon {
+	position: relative;
+	width: auto;
+	height: 100%;
+	float: left;
+}
+
+canvas { 
+    width: 120px; 
+    height: 120px;
+    float: left;
+    margin-left: 8px;
+    margin-top: 5px;
+}
+
+.threeJSOC {
+	position: absolute;
+	width: 79px; 
+    height: 79px;
+	z-index: 100;
+	cursor: pointer;
+}
+
+.threeJSOC:hover {
+	border: 3px solid #00C3FF;
+}
+
+.logoCon {
+	width: 270px;
+	padding: 0;
+	margin: 0;
+	height: auto;
+	float: right;
+	margin-left: 15px;
+}
+
+.logoP {
+	font-size: 48px;
+	text-shadow: 0 0 4px #002BAB, 0 0 6px black, 0 0 10px #00C3FF, 0 0 20px #00C3FF, -2px -2px 24px #CF19B9, -4px -4px 40px #CF19B9, -8px -8px 80px #CF19B9, 2px 2px 24px #1900FF, 4px 4px 40px #00C3FF, 0px 0px 80px #00C3FF, 0px 0px 150px #00C3FF;
+	font-weight: lighter;
+	color: #00C3FF;
+	cursor: pointer;
+	text-align: center;
+	padding: 5px;
+	margin: 0;
+}
+
+.rightHeaderCon {
+	position: relative;
+	width: auto;
+	height: 56px;
+	float: right;
+}
+
+.adFrame {
+	float: right;
+	margin-right: 10px;
+	overflow: hidden;
+	border: 0;
+	max-width: 310px;
+	min-width: 300px;
+	width: 100%;
+	max-height: 110px;
+	min-height: 100px;
+	height: 100%;
+}
+
+.entertainmentCon {
+	position: absolute;
+	width: auto;
+	text-align: center;
+	clear: both;
+	z-index: 101;
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 80px;
+}
+
+.entertainmentDiv {
+	cursor: pointer;
+	width: 140px;
+	height: 30px;
+	background: #1900FF; /* For browsers that do not support gradients */
+  	background: -webkit-linear-gradient(left, #143D66, #00C3FF 80%); /* For Safari 5.1 to 6.0 */
+  	background: -o-linear-gradient(right, #143D66, #00C3FF 80%); /* For Opera 11.1 to 12.0 */
+  	background: -moz-linear-gradient(right, #143D66, #00C3FF 80%); /* For Firefox 3.6 to 15 */
+  	background: linear-gradient(to right, #143D66, #00C3FF 80%); /* Standard syntax */
+    margin: 10px;
+    box-shadow: 0px 0px 4px white, 0px 0px 8px #1900FF, 0px 0px 12px #1900FF, 0px 0px 24px #1900FF, 0px 0px 34px #57009E;
+}
+
+.entertainmentDiv:hover {
+	background: #4DBBFF;
+    background: -webkit-linear-gradient(30deg, #5100FF, #4DBBFF 60%);
+    background: -o-linear-gradient(30deg, #5100FF, #4DBBFF 60%);
+    background: -moz-linear-gradient(30deg, #5100FF, #4DBBFF 60%);
+    background: linear-gradient(30deg, #5100FF, #4DBBFF 60%);
+    color: yellow;
+    border-bottom: 1px solid #00C3FF;
+}
+
+.moviesDiv {
+
+}
+
+.fa {
+	cursor: pointer;
+	font-size: 36px;
+	border: 3px solid #00C3FF;
+	padding: 8px;
+	height: 38px;
+	width: 38px;
+	background-color: black;
+	margin: 5px 0px 0px 10px;
+	position: relative;
+	color: white;
+	float: left;
+}
+
+.fa:hover {
+	transition: 1s;
+	color: #00C3FF;
+	border: 3px solid #00C3FF;
+}
+
+.fa-group {
+	position: fixed;
+	z-index: 10000;	
+}
+
+.navCon {
+	position: fixed;
+	width: 54px;
+	height: 285px;
+	z-index: 101;
+	border: 3px solid #00C3FF;
+	background-color: black;
+	padding-top: 5px;
+}
+
+
+.search {
+	height: 50px;
+	padding: 0px;
+	font: oblique 28px monospace;
+	color: #2f4050;
+	float: left;
+    margin-top: 12px;
+    margin-right: 0;
+	color: grey;
+    border: 3px solid #00C3FF;
+    background-color: black;
+    text-indent: 5px;
+    border-right: none;
+}
+
+/*.search:hover {
+	background: #4DBBFF;
+    background: -webkit-linear-gradient(30deg, #E3F8FF, #F0FCFC 60%);
+    background: -o-linear-gradient(30deg, #E3F8FF, #F0FCFC 60%);
+    background: -moz-linear-gradient(30deg, #E3F8FF, #F0FCFC 60%);
+    background: linear-gradient(30deg, #E3F8FF, #F0FCFC 60%);
+}*/
+
+.searchB {
+	margin-right: 5px;
+	margin-left: 0px;
+	float: left;
+	padding-bottom: 8px;
+	margin-top: 7px;
+}
+
+.fa-search {
+	border-radius: 0px;
+	border: 3px solid #00C3FF;
+	width: 34px;
+	height: 34px;
+	margin-left: 0px;
+}
+
+.socialL {
+	clear: both;
+	position: relative;
+	width: 50px;
+	height: 50px;
+	margin: 0px 0px 10px 2px;
+	cursor: pointer;
+	opacity: 0.8;
+}
+
+.socialL:hover {
+	opacity: 1;
+}
+
+.poster {
+	width: 181px;
+	height: 274px;
+	border-radius: 8px;
+	cursor: pointer;
+	opacity: 0.9;
+	z-index: 2;
+	margin: 12px;
+	box-shadow: 0px 0px 1px white, 0px 0px 3px #BFBFBF;
+	float: left;
+}
+
+.poster:hover {
+	opacity: 1.0;
+	box-shadow: 0px 0px 1px white, 0px 0px 5px white, 0px 0px 8px white, 0px 0px 10px #00C3FF, 0px 0px 20px #00C3FF, 0px 0px 30px #00C3FF, 0px 0px 40px #00C3FF;
+}
+
+.mMCon {
+	margin-right: auto;
+	margin-left: auto;
+	width: 350px;
+	height: 50px;
+	clear: both;
+}
+
+.frame {
+   	z-index: 1000001;
+   	position: fixed;
+   	top: 0;
+   	left: 0;
+   	bottom: 0;
+   	border: none;
+}
+
+.tvShowCon {
+	z-index: 1000000;
+   	position: fixed;
+   	top: 0;
+   	left: 0;
+   	bottom: 0;
+   	border: none;
+    overflow: hidden;
+	overflow-y: scroll; 
+}
+
+.episodeCon {
+	float: left;
+}
+
+.episodesFrame {
+	z-index: 1;
+	position: relative;
+	border: none;
+}
+
+.sePCon {
+	position: absolute;
+	z-index: 3;
+    width: 70px;
+    background-color: black;
+    padding-left: 10px;
+    margin: 1px;
+    line-height: 0;
+    right: 0;
+    margin-top: 0;
+}
+
+.seP {
+	font-variant: small-caps;
+	font-size: 28px;
+	color: yellow;
+	text-shadow: 0px 0px 4px #145E00, 0 0 6px black, 0 0 8px yellow, 0 0 16px lime, 0 0 32px lime, 0 0 64px lime;
+}
+
+.close {
+	z-index: 10000000;
+   	position: fixed;
+   	width: 53px;
+   	height: 55px;
+   	background-color: black;
+   	color: white;
+   	text-align: center;
+   	border-radius: 5px;
+   	top: 0;
+   	right: 3;
+   	cursor: pointer;
+   	font-size: 18px;
+}
+
+.close:hover {
+	transition: 1s;
+	color: #00C3FF;
+	margin-right: 5px;
+}
+
+.filters {/*more in windowSize()*/
+	text-align: center;
+	width: 160px;
+	float: left;
+	background-color: black;
+	position: fixed;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	z-index: 100;
+	left: 0;
+	top: -2px;
+	padding-top: 2px;
+	border-right: 3px solid #00C3FF;
+}
+
+.subFilterTitles {
+	font-variant: small-caps;
+	margin-bottom: 15px;
+	font-size: 24px;
+	clear: both;
+	padding-top: 10px;
+	text-shadow: 0 0 4px #002BAB, 0 0 6px black, 0 0 10px #00C3FF, 0 0 20px #00C3FF, -2px -2px 24px #CF19B9, -4px -4px 40px #CF19B9, -8px -8px 80px #CF19B9, 2px 2px 24px #1900FF, 4px 4px 40px #00C3FF, 0px 0px 80px #00C3FF, 0px 0px 150px #00C3FF;
+	font-weight: lighter;
+	color: #00C3FF;
+	position: relative;
+}
+
+.sortByDiv {
+	position: relative;
+	height: auto;
+}
+
+.sortTitle {
+	padding: 5px 0px 0px 0px;
+	margin-top: 0px;
+}
+
+.docSortTitle {
+	font-size: 20px;
+}
+
+.sort {
+	float: left;
+	font-family: monospace;
+	margin: 5px 0px 5px 5px;
+	cursor: pointer;
+	width: 150px;
+	text-align: center;
+	height: 30px;
+	color: white;
+	background: #1900FF; /* For browsers that do not support gradients */
+  	background: -webkit-linear-gradient(left, #CC6DFC, #00C3FF 80%); /* For Safari 5.1 to 6.0 */
+  	background: -o-linear-gradient(right, #CC6DFC, #00C3FF 80%); /* For Opera 11.1 to 12.0 */
+  	background: -moz-linear-gradient(right, #CC6DFC, #00C3FF 80%); /* For Firefox 3.6 to 15 */
+  	background: linear-gradient(to right, #CC6DFC, #00C3FF 80%); /* Standard syntax */
+	line-height: 20%;
+	opacity: 0.9;
+	font-weight: bold;
+	font-size: 14px;
+	box-shadow: -1px -1px 4px white, -2px -2px 8px #CF19B9, -2px -2px 12px #CF19B9, -2px -2px 24px #CF19B9, 1px 1px 4px white, 2px 2px 8px #1900FF, 2px 2px 12px #1900FF, 2px 2px 34px #1900FF, 2px 2px 50px #1900FF;
+	position: relative;
+}
+
+.sort:hover {
+	background: #1900FF; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(left top, #CC6DFC 40%, #1900FF); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(bottom right, #CC6DFC 40%, #1900FF); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(bottom right, #CC6DFC 40%, #1900FF); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to bottom right, #CC6DFC 40%, #1900FF); /* Standard syntax */
+  	opacity: 1;
+  	border-bottom: 1px solid #00C3FF;
+  	border-right: 1px solid #00C3FF;
+  	box-shadow: 0 0 10px #fff, 0 0 20px #fff, -2px -2px 24px #CF19B9, -4px -4px 40px #CF19B9, 2px 2px 24px #1900FF, 4px 4px 40px #1900FF;
+}
+
+.rUButton {
+	background: #1900FF; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(170deg, #CC6DFC 40%, #1900FF); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(170deg, #CC6DFC 40%, #1900FF); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(170deg, #CC6DFC 40%, #1900FF); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(170deg, #CC6DFC 40%, #1900FF); /* Standard syntax */
+  	opacity: 1;
+  	text-shadow: 0px 0px 16px black;
+  	border-bottom: 1px solid #00C3FF;
+  	border-right: 1px solid #00C3FF;
+  	box-shadow: 0 0 10px #fff, 0 0 20px #fff, -2px -2px 24px #CF19B9, -4px -4px 40px #CF19B9, 2px 2px 24px #1900FF, 4px 4px 40px #1900FF;
+  	color: yellow;
+}
+
+.scrollFilter {/*more in pj.js*/
+	float: left;
+	font-family: monospace;
+	margin-left: 5px;
+	width: 150px;
+	height: 235px;
+	overflow: hidden;
+	overflow-y: scroll; 
+	text-align: left;
+	margin-top: -5px;
+	border: 1px dotted #143D66;
+	position: relative;
+}
+
+.genreDiv {
+	top: 0;
+}
+
+.filterLinks {
+	width: 150px;
+	height: 30px;
+	background: #1900FF; /* For browsers that do not support gradients */
+  	background: -webkit-linear-gradient(left, #143D66, #00C3FF 80%); /* For Safari 5.1 to 6.0 */
+  	background: -o-linear-gradient(right, #143D66, #00C3FF 80%); /* For Opera 11.1 to 12.0 */
+  	background: -moz-linear-gradient(right, #143D66, #00C3FF 80%); /* For Firefox 3.6 to 15 */
+  	background: linear-gradient(to right, #143D66, #00C3FF 80%); /* Standard syntax */
+    clear: both;
+    margin-top: 5px;
+    box-shadow: 0px 0px 4px white, 0px 0px 8px #1900FF, 0px 0px 12px #1900FF, 0px 0px 24px #1900FF, 0px 0px 34px #57009E;
+}
+
+
+.filterLinks:hover {
+	background: #4DBBFF;
+    background: -webkit-linear-gradient(30deg, #5100FF, #4DBBFF 60%);
+    background: -o-linear-gradient(30deg, #5100FF, #4DBBFF 60%);
+    background: -moz-linear-gradient(30deg, #5100FF, #4DBBFF 60%);
+    background: linear-gradient(30deg, #5100FF, #4DBBFF 60%);
+    color: yellow;
+    border-bottom: 1px solid #00C3FF;
+}
+
+.checkbox {
+	cursor: pointer;
+	float: left;
+	width: 20px;
+	height: 20px;
+	margin-top: 5px;
+	background: #1900FF; /* For browsers that do not support gradients */
+  	background: -webkit-linear-gradient(left, #143D66, #00C3FF 80%); /* For Safari 5.1 to 6.0 */
+  	background: -o-linear-gradient(right, #143D66, #00C3FF 80%); /* For Opera 11.1 to 12.0 */
+  	background: -moz-linear-gradient(right, #143D66, #00C3FF 80%); /* For Firefox 3.6 to 15 */
+  	background: linear-gradient(to right, #143D66, #00C3FF 80%); /* Standard syntax */
+    clear: both;
+    box-shadow: 0px 0px 2px white, 0px 0px 4px white;
+}
+
+.checkbox:hover {
+	box-shadow: 0px 0px 2px 1px #00C3FF, 0px 0px 4px 1px white;
+}
+
+.filterText {
+	width: 120px;
+	float: left;
+	font-size: 14px;
+	text-transform: capitalize;
+	height: 20px;
+	line-height: 0%;
+}
+
+.paypalCon {
+	clear: both;
+	position: fixed;
+	width: 100px;
+	height: 30px;
+	margin: 0px 0px 0px 40px;
+	cursor: pointer;
+	opacity: 0.8;
+	z-index: 1000000000000;
+}
+
+#pjFB {
+	position: fixed;
+	z-index: 1000000000000;
+}
